@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+.grid {
+  width: 30vw;
+  min-width: fit-content;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center;
+}
+
+.span {
+  grid-column: 1 / -1;
+}
+
+.grid button {
+  margin: .5rem;
+  width: 100px;
+  height: 75px;
+  padding: .5rem;
+  text-align: center;
+}
